@@ -1,0 +1,99 @@
+
+	 /*** MAIN ***/
+	 .main .wrapper-inner{
+	 	max-width: 1300px;
+	 	margin: 0 auto;
+	 	background-color: #fff;
+	 }
+
+	 .main ul 
+	 {
+	 	margin: 0 0 15px;
+	 	padding: 0;
+	 }
+	 .main ul:after,
+	 .main.payrolling section.conditions ul > li:after {
+	 	clear: both;
+	 	content: "";
+	 	display: block;
+	 }
+
+	 .main.payrolling section.call-to-action-contact .action-box a {
+	 	text-decoration: none;
+	 }
+	 .main section,
+	 .main .text-block {
+	 	padding: 20px 45px;
+	 } /*WARNING!!!*/
+	 .wrapper-inner{
+	 	padding: 0 30px 20px;
+	 }
+
+	/*PAYROLLING-START*/
+	
+	.main.payrolling section.services ul.services-list > li {
+		float: left;
+		position: relative;
+		width: 298px;
+		list-style: none;
+		min-height: 190px;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	.main.payrolling section.referenties ul.referenties-list > li {
+		float: left;
+		text-align: center;
+		list-style: none;
+		width: 19%;
+		margin-left: 6%;
+		margin-bottom: 35px;
+	}
+	.main.payrolling section.services ul.services-list > li > a {
+		text-decoration: none;
+		display: block;
+		width: 100%;
+		height: 150px;
+	}
+
+	.main.payrolling section.services ul.services-list > li i.fa {
+		display: block;
+		color: #2986E1;
+		margin: 0 auto 15px;
+	}
+	.main.payrolling section.services ul.services-list > li .card-front {
+		position: absolute;
+		width: 100% !important;
+		height: 150px !important;
+		transition: all 0.5s ease-out 0s;
+		backface-visibility: hidden;
+		transform: rotateY(0deg);
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+	}
+	.main.payrolling section.services ul.services-list > li .card-back {
+		transform: rotateY(-180deg);
+		width: 100% !important;
+		box-shadow: 2px 1px 1px 1px rgba(0,0,0,0.2);
+		position: absolute;
+		padding: 12px;
+		transition: all 0.5s ease-out 0s;
+		backface-visibility: hidden;
+		background-color: #fff;
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+		z-index: 1;
+	}
+	.main.payrolling section.services ul.services-list > li:hover .card-front {
+		transform: rotateY(-180deg);
+	}
+	.main.payrolling section.services ul.services-list > li:hover .card-back {
+		transform: rotateY(0deg);
+	}
+	.main.payrolling section.services ul.services-list > li:hover .card-back > strong {
+		display: inline-block;
+	}
+	
